@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<!-- BUILD bio-016 -->
+<!-- BUILD bio-017 -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#02040c">
 <title>Thundrr — Join the roster</title>
@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   THUNDRR — creator bio landing  ·  build bio-016
+   THUNDRR — creator bio landing  ·  build bio-017
    Single file. No build step. No dependencies beyond Montserrat.
    ============================================================ */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -369,9 +369,7 @@ body.in-tour #bg .a2{opacity:.7}
 .jp-av i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:11px;font-weight:800;color:#fff;margin-left:-9px;box-shadow:0 0 0 2px #0d1533}
 .jp-av i:first-child{margin-left:0}
 .jp-av i{position:relative}.jp-av i:nth-child(1){z-index:3}.jp-av i:nth-child(2){z-index:2}.jp-av i:nth-child(3){z-index:1}
-.fin h2{margin-top:14px;font-weight:900;font-size:clamp(28px,8.2vw,40px);line-height:1.02;letter-spacing:-.04em;max-width:14ch;text-wrap:balance}
-.fin>p{margin-top:10px;font-size:15px;line-height:1.48;font-weight:500;color:var(--soft);max-width:33ch}
-.fin .rg-h{margin-top:18px;font-size:13px;font-weight:700;color:var(--mute)}
+.fin .rg-h{margin-top:34px;font-size:13px;font-weight:700;color:var(--mute)}
 .rgrid{margin-top:12px;width:100%;max-width:440px;display:grid;grid-template-columns:1fr;gap:10px}
 /* region buttons: one full-width row per region, each with its own accent, a glowing flag badge and a flag watermark */
 .rg{--ar:28,100,255;--ar2:255,13,74;position:relative;isolation:isolate;display:flex;align-items:center;gap:12px;min-height:76px;padding:12px 14px;border-radius:22px;text-align:left;overflow:hidden;
@@ -431,16 +429,13 @@ body.in-tour #bg .a2{opacity:.7}
   .t-hint{display:none}
   .story-final{display:block}
   .fin{justify-content:center}
-  .fin h2{font-size:clamp(40px,3.6vw,48px)}
-  .joinpill{margin-top:14px}
   .perks{margin-top:12px}
   .fin-links{margin-top:12px}
   .fin-orb{width:100px;height:100px;margin-top:0}
   .fin-orb .core{width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:19px}
   .fin-orb .core svg{width:42px;height:42px}
   .fin-orb .sat{width:40px;height:40px;margin:-20px 0 0 -20px}
-  .fin .rg-h{margin-top:12px}
-  .fin>p{font-size:17px;max-width:38ch}
+  .fin .rg-h{margin-top:30px}
   .rgrid{max-width:460px;gap:7px}
   .rg{min-height:62px;padding:8px 14px}
   .rg-fl{width:44px;height:44px;font-size:24px}
@@ -1138,17 +1133,14 @@ body.in-tour #bg .a2{opacity:.7}
           <div class="orbit o2"></div>
           <div class="core" data-ic="halo"></div>
         </div>
-        <div class="joinpill stg" style="--i:1"><span class="jp-av" aria-hidden="true"><i style="background:linear-gradient(135deg,#ff9ab6,#e0245e)">M</i><i style="background:linear-gradient(135deg,#9ad8ff,#2a7dff)">D</i><i style="background:linear-gradient(135deg,#ffd38a,#e08600)">K</i></span>Join 1,000+ other LIVE Creators</div>
-        <h2 class="stg" style="--i:2">Ready to go LIVE with Thundrr?</h2>
-        <p class="stg" style="--i:3">No agency fees, ever. Pick your region and we'll open the right TikTok LIVE application.</p>
-        <div class="rg-h stg" style="--i:4">Where are you applying from?</div>
-        <div class="rgrid stg" style="--i:5" id="rgrid"></div>
-        <div class="perks stg" style="--i:6">
+        <div class="rg-h stg" style="--i:1">Where are you applying from?</div>
+        <div class="rgrid stg" style="--i:2" id="rgrid"></div>
+        <div class="perks stg" style="--i:3">
           <span><span data-ic="checkc"></span>No agency fees</span>
           <span><span data-ic="checkc"></span>Direct TikTok support</span>
           <span><span data-ic="checkc"></span>Keep full creative control</span>
         </div>
-        <div class="fin-links stg" style="--i:7">
+        <div class="fin-links stg" style="--i:4">
           <p>Already a Thundrr creator? <button type="button" data-go="app">Open the app</button></p>
           <p>Want to manage creators? <a href="https://wkf.ms/3COWZi3" target="_blank" rel="noopener">Apply as a Creator Manager</a></p>
         </div>
@@ -1180,7 +1172,7 @@ body.in-tour #bg .a2{opacity:.7}
 
 <script>
 /* ============================================================
-   THUNDRR — creator bio landing  ·  build bio-016
+   THUNDRR — creator bio landing  ·  build bio-017
    ============================================================ */
 (function(){
 'use strict';
@@ -1469,7 +1461,7 @@ function go(i, dir){
   $('#benefits').classList.toggle('hide', !last);
   $('#nextLbl').textContent = NEXT_LBL[k] || 'Next';
   var h = $('h2', s), ht = h ? (h.getAttribute('aria-label') || h.textContent) : '';
-  $('#live').textContent = last ? ht : 'Benefit ' + (i + 1) + ' of ' + segs.length + ': ' + ht;
+  $('#live').textContent = last ? 'Choose your region to apply' : 'Benefit ' + (i + 1) + ' of ' + segs.length + ': ' + ht;
 }
 
 LOOPS.push(function(dt){
